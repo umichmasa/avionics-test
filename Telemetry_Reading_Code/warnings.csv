@@ -1,0 +1,5 @@
+tlm-mneumonic,mode,warn_low,warn_high,help_text,note
+cc_pt_01,mode_1,600,1100,pressure warning,heyo
+cc_pt_02,mode_2,450,900,pressure warning,heyo
+cc_pt_03,mode_3,650,1200,pressure warning,heyo
+cc_pt_04,mode_4,500,1000,pressure warning,heyo
