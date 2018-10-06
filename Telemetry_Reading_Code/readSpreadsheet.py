@@ -52,6 +52,27 @@ class Warning(object):
 
         return string
 
+    def getTitles(self):
+        return self.titles
+
+    def getTlm(self):
+        return self.tlm
+
+    def getMode(self):
+        return self.mode
+
+    def getWarnLow(self):
+        return self.warnlow
+
+    def getWarnHigh(self):
+        return self.warnhigh
+
+    def getHelpTxt(self):
+        return self.helptxt
+
+    def getNote(self):
+        return self.note
+
 
 
 
@@ -109,5 +130,7 @@ def createWarningList():
     note = sortData(data, "string", 5, 1)
     warning = Warning(titles,tlm,mode,warnlow,warnhigh,helptxt,note)
     print(warning.toString())
+    return warning;
 
 createWarningList()
+print(createWarningList().getNote())
