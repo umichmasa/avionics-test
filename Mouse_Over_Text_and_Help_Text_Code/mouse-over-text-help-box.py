@@ -24,6 +24,7 @@ class App(QWidget):
         button.setToolTip("This is just a warning button! Hope you have a nice rest of your day!")
         self.show()
 
+    def on_click(self):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
