@@ -20,7 +20,7 @@ class App(QWidget):
 
         # Create widget
         label = QLabel(self)
-        pixmap = QPixmap('p&id.png')
+        pixmap = QPixmap('p&id.png').scaled(1680,900)
         label.setPixmap(pixmap)
         self.resize(pixmap.width(), pixmap.height())
 
