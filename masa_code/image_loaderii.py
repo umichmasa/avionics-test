@@ -1,6 +1,7 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget, QLabel
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton
 from PyQt5.QtGui import QIcon, QPixmap
+from PyQt5.QtCore import pyqtSlot
 
 
 class App(QWidget):
@@ -23,8 +24,18 @@ class App(QWidget):
         pixmap = QPixmap('p&id.png').scaled(1680,900)
         label.setPixmap(pixmap)
         self.resize(pixmap.width(), pixmap.height())
+        button = QPushButton(self)
+        button.move(115, 103)
+        button.setStyleSheet("background-color:transparent;border:0;")
+        button.setToolTip("MASA IS FUN!")
+        button.resize(30, 70)
+        button.clicked.connect(self.on_click)
 
         self.show()
+
+    @pyqtSlot()
+    def on_click(self):
+        print('button is pushed my dude')
 
 
 if __name__ == '__main__':
