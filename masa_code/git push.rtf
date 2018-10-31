@@ -1,0 +1,59 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \cb3 \CocoaLigature0 Last login: Sat Oct  6 16:29:56 on ttys001\
+0587393728:~ gregrizzoii$ cd desktop/git clone https://github.com/umichmasa/avionics-test.git\
+-bash: cd: desktop/git: No such file or directory\
+0587393728:~ gregrizzoii$ git clone https://github.com/umichmasa/avionics-test.git\
+Cloning into 'avionics-test'...\
+remote: Enumerating objects: 2477, done.\
+remote: Counting objects: 100% (2477/2477), done.\
+remote: Compressing objects: 100% (1552/1552), done.\
+remote: Total 2477 (delta 821), reused 2436 (delta 780), pack-reused 0\
+Receiving objects: 100% (2477/2477), 76.39 MiB | 13.15 MiB/s, done.\
+Resolving deltas: 100% (821/821), done.\
+Checking out files: 100% (2445/2445), done.\
+0587393728:~ gregrizzoii$ git add\
+Nothing specified, nothing added.\
+Maybe you wanted to say 'git add .'?\
+0587393728:~ gregrizzoii$ cd gregrizzoii\
+-bash: cd: gregrizzoii: No such file or directory\
+0587393728:~ gregrizzoii$ cd avionics-test\
+0587393728:avionics-test gregrizzoii$ git add gui*\
+0587393728:avionics-test gregrizzoii$ git commit -m "color changing buttons" -- gui*\
+[master 69d76c8] color changing buttons\
+ 1 file changed, 93 insertions(+)\
+ create mode 100644 gui_button/gui_button.py\
+0587393728:avionics-test gregrizzoii$ git push\
+Username for 'https://github.com': grizzo\
+Password for 'https://grizzo@github.com': \
+remote: Invalid username or password.\
+fatal: Authentication failed for 'https://github.com/umichmasa/avionics-test.git/'\
+0587393728:avionics-test gregrizzoii$ git add gui*\
+0587393728:avionics-test gregrizzoii$ git push\
+Username for 'https://github.com': grizzo\
+Password for 'https://grizzo@github.com': \
+remote: Invalid username or password.\
+fatal: Authentication failed for 'https://github.com/umichmasa/avionics-test.git/'\
+0587393728:avionics-test gregrizzoii$ git push\
+Username for 'https://github.com': grizzo56\
+Password for 'https://grizzo56@github.com': \
+remote: Invalid username or password.\
+fatal: Authentication failed for 'https://github.com/umichmasa/avionics-test.git/'\
+0587393728:avionics-test gregrizzoii$ git push\
+Username for 'https://github.com': grizzo56\
+Password for 'https://grizzo56@github.com': \
+Enumerating objects: 5, done.\
+Counting objects: 100% (5/5), done.\
+Delta compression using up to 12 threads.\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (4/4), 885 bytes | 885.00 KiB/s, done.\
+Total 4 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/umichmasa/avionics-test.git\
+   6faf00e..69d76c8  master -> master\
+0587393728:avionics-test gregrizzoii$ }
